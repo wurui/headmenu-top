@@ -1,8 +1,11 @@
 define([],function(){
   return {
     init:function($mod){
-    	$('.icon-menu',$mod).on('click',function(){
-    		$(this).parent().toggleClass('opened')
+    	var $btn = $('.icon-menu',$mod).on('click',function(){
+    		$btn.toggleClass('opened')
+    	}).parent();
+    	$(window).on('scroll',function(){
+    		$btn.removeClass('opened')
     	})
     }
   }
