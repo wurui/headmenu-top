@@ -2,9 +2,22 @@
     <xsl:template match="/root" name="wurui.headmenu-top">
         <!-- className 'J_OXMod' required  -->
         <div class="J_OXMod oxmod-headmenu-top" ox-mod="headmenu-top">
-            <h1>
-                This is mod headmenu-top;
-            </h1>
+            <nav>
+            	<div class="menu">
+            		<button class="icon-menu">&#xe600;</button><br/>
+            		<ul class="list">
+            			<xsl:for-each select="data/headmenu/menu/i">
+            				<li>
+            					<a href="{href}"><xsl:value-of select="title"/></a>
+            				</li>
+            			</xsl:for-each>
+            		</ul>
+            	</div>
+            	<xsl:if test="data/headmenu/logo">
+                	<img src="{data/headmenu/logo}"/>
+                </xsl:if>
+
+            </nav>
         </div>
     </xsl:template>
 </xsl:stylesheet>
