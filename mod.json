@@ -1,0 +1,9 @@
+{
+  "name": "headmenu-top",
+  "apiDependencies": [
+  {
+    "name": "headmenu"
+  }
+]
+}
+
