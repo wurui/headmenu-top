@@ -1,9 +1,9 @@
 {
   "name": "headmenu-top",
   "apiDependencies": [
-  {
-    "name": "headmenu"
-  }
-]
+  
+  		{"name":"ui-imglist"},
+  		{"name":"ui-entry"},
+	]
 }
 
