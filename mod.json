@@ -3,7 +3,7 @@
   "apiDependencies": [
   
   		{"name":"ui-imglist"},
-  		{"name":"ui-entry"},
+  		{"name":"ui-entry"}
 	]
 }
 
